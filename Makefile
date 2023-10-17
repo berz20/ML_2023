@@ -5,7 +5,7 @@ NOTEBOOK_FILES := $(wildcard ./Notebooks/Notebook_*.ipynb)
 
 .PHONY: notebooks
 notebooks:
-	# Go into the FIS folder and update the repository
+	# Go into the ML official git repo and update this repository
 	@cd $(NOTEBOOKS_DIR) && git pull
 	# Copy the Notebook files into the src directory without overwriting existing ones
 	@for file in $(NOTEBOOK_FILES); do \
